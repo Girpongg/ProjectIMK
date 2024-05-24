@@ -114,7 +114,7 @@
         }
 
         .mega-box {
-            border-top: 1px solid rgba(0, 0, 0, 0.2); 
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
             position: absolute;
             top: 65px;
             background-color: #F4F3EE;
@@ -125,12 +125,7 @@
             transition: all 0.3s ease-in-out;
         }
 
-        #man:hover .mega-box {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        #ladies:hover .mega-box {
+        .nav-item:hover .mega-box {
             opacity: 1;
             visibility: visible;
         }
@@ -218,6 +213,131 @@
             transform-origin: bottom left;
             transform: scaleX(1);
         }
+
+        .text-new-collection {
+            margin-bottom: 50px;
+        }
+
+        .new-image {
+            overflow: hidden;
+            padding: 0;
+            margin: 0 3%;
+            border-radius: 8px;
+            background-color: #fff;
+            flex: 1;
+        }
+
+        .new-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .new-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .skip {
+            background-color: #FFFFFF;
+            width: 100%;
+            padding: 50px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .skips {
+            background-color: #BCB8B1;
+            width: 100%;
+            padding-top: 70px;
+            padding-left: 100px;
+            padding-bottom: 70px;
+            padding-right: 30px;
+        }
+
+        .new2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            /* padding sides */
+        }
+
+        .new2 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .new3 {
+            /* padding sides */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* center vertically */
+        }
+
+        .new3 .content {
+            max-width: 400px;
+            /* maximum width */
+            margin: 0;
+            /* reset margin */
+        }
+
+        .new3 h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .new3 p {
+            margin-bottom: 20px;
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+
+        .card,
+        .card img {
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .card-body {
+            padding-bottom: 0;
+        }
+
+
+        @media (max-width: 768px) {
+            .new-image {
+                margin: 1%;
+            }
+
+            .new3 {
+                padding-top: 20px;
+                /* reduce top padding */
+            }
+
+            .new2 {
+                padding: 20px;
+                /* reduce padding */
+            }
+
+            .new3 h2 {
+                text-align: center;
+            }
+
+            .new3 .content {
+                max-width: none;
+                font-size: 10px;
+                text-align: justify;
+            }
+
+            .logo {
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
 
@@ -225,51 +345,62 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top p-0 px-lg-0">
         <div class="container-fluid max-vw-75 px-lg-5">
-            <div class="logo"><a href="">Eleganza</a></div>
-            <ul class="nav-link">
-                <li id="man" class="text-navbar"><a class="text" href="#">Man</a>
-                    <div class="mega-box">
-                        <div class="content">
-                            <div class="row picture">
-                                <img src="./assets/man.png" alt="">
-                            </div>
-                            <div class="row">
-                                <header>Top</header>
-                                <ul class="mega-link">
-                                    <li><a href="">Tshirts</a></li>
-                                    <li><a href="">Polo Shirts</a></li>
-                                    <li><a href="">Hoodies</a></li>
-                                    <li><a href="">Jacket</a></li>
-                                    <li><a href="">Knitwears</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Bottom</header>
-                                <ul class="mega-link">
-                                    <li><a href="">Jeans</a></li>
-                                    <li><a href="">Polo Jogger</a></li>
-                                    <li><a href="">Shorts</a></li>
-                                    <li><a href="">Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Apparel</header>
-                                <ul class="mega-link">
-                                    <li><a href="">Bodysuit</a></li>
-                                    <li><a href="">Bottom</a></li>
-                                    <li><a href="">Tops</a></li>
-                                </ul>
+            <div class="logo"><a href="#">Eleganza</a></div>
+            <!-- Add Bootstrap's navbar toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Add the collapse wrapper -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li id="man" class="nav-item text-navbar">
+                        <a class="nav-link text" href="#">Man</a>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row picture">
+                                    <img src="./assets/man.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Top</header>
+                                    <ul class="mega-link">
+                                        <li><a href="#">Tshirts</a></li>
+                                        <li><a href="#">Polo Shirts</a></li>
+                                        <li><a href="#">Hoodies</a></li>
+                                        <li><a href="#">Jacket</a></li>
+                                        <li><a href="#">Knitwears</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Bottom</header>
+                                    <ul class="mega-link">
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Polo Jogger</a></li>
+                                        <li><a href="#">Shorts</a></li>
+                                        <li><a href="#">Pants</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Apparel</header>
+                                    <ul class="mega-link">
+                                        <li><a href="">Bodysuit</a></li>
+                                        <li><a href="">Bottom</a></li>
+                                        <li><a href="">Tops</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li id="ladies" class="text-navbar"><a class="text" href="">Ladies</a></li>
-                <li class="text-navbar"><a class="text" href="">Collab</a></li>
-                <li class="text-navbar"><a class="text" href="">Sale</a></li>
-                <li class="text-navbar"><a class="text" href="">History</a></li>
-            </ul>
+                    </li>
+                    <li id="ladies" class="nav-item text-navbar"><a class="nav-link text" href="#">Ladies</a>
+                    </li>
+                    <li class="nav-item text-navbar"><a class="nav-link text" href="#">Collab</a></li>
+                    <li class="nav-item text-navbar"><a class="nav-link text" href="#">Sale</a></li>
+                    <li class="nav-item text-navbar"><a class="nav-link text" href="#">History</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <!-- Swiper -->
     <div class="carousel">
         <div class="swiper mySwiper">
@@ -281,10 +412,200 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    <div class="container-fluid my-5 w-100">
+        <div class="mx-md-5 my-5">
+            <div class="text-new-collection">
+                <h1 class="fs-product fw-bold text-center" data-aos="zoom-in-up">New Collection</h1>
+                <p class="text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt</p>
+            </div>
+            <div>
+                <div class="container text-center">
+                    <div class="row align-items-start mt-7">
+                        <div class="col-12 col-md-4 new-image">
+                            <div class="frame">
+                                <img src="./assets/new1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 new-image">
+                            <div class="frame">
+                                <img src="./assets/new2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 new-image">
+                            <div class="frame">
+                                <img src="./assets/new3.png" alt="">
+                            </div>
+                        </div>
 
-    <div>
-        Halo
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="container-fluid mt-7 skip">
+        <div class="row">
+            <div class="col-12 col-md-7 new2">
+                <img src="./assets/about.png" alt="">
+            </div>
+            <div class="col-12 col-md-5 new3">
+                <div class="content">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nesciunt velit consequatur
+                        numquam, tempora quia qui corporis non facere. Id labore velit doloribus modi assumenda, nobis
+                        reprehenderit laudantium incidunt autem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-7  skips">
+        <div class="row">
+            <div class="col-12 col-md-4 new3">
+                <div class="content">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nesciunt velit consequatur
+                        numquam, tempora quia qui corporis non facere. Id labore velit doloribus modi assumenda, nobis
+                        reprehenderit laudantium incidunt autem.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 new2">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper7.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-5">
+        <div class="mx-md-5 my-5">
+            <div class="text-new-collection">
+                <h1 class="fs-product fw-bold text-center" data-aos="zoom-in-up">Collection</h1>
+                <p class="text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt</p>
+            </div>
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-2 row-cols-lg-5 g-5">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             effect: 'fade',
@@ -297,6 +618,15 @@
             },
             speed: 500,
             loop: true
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3.5,
+            spaceBetween: 25,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
         });
     </script>
 </body>
