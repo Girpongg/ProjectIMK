@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Swiper demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -16,7 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+    
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Libre+Franklin:ital,wght@0,600;1,600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
         ::-webkit-scrollbar {
             width: 0px;
             background: transparent;
@@ -25,7 +27,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-family: "Montserrat", sans-serif;
             background: #eee;
             color: #000;
             display: flex;
@@ -33,6 +35,11 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+        }
+
+        .best {
+            font-family: "Jomolhari", serif;
+            font-size: 40px;
         }
 
         .carousel {
@@ -114,7 +121,7 @@
         }
 
         .mega-box {
-            border-top: 1px solid rgba(0, 0, 0, 0.2); 
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
             position: absolute;
             top: 65px;
             background-color: #F4F3EE;
@@ -125,12 +132,7 @@
             transition: all 0.3s ease-in-out;
         }
 
-        #man:hover .mega-box {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        #ladies:hover .mega-box {
+        .nav-item:hover .mega-box {
             opacity: 1;
             visibility: visible;
         }
@@ -140,6 +142,17 @@
             padding: 25px 30px;
             display: flex;
             width: 100%;
+        }
+
+        .text-navbar .text {
+            font-family: "Libre Franklin", sans-serif !important;
+            text-decoration: none !important;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .text-navbar .sale {
+            color: #9D0000 !important;
         }
 
         .picture {
@@ -218,6 +231,365 @@
             transform-origin: bottom left;
             transform: scaleX(1);
         }
+
+        .text-new-collection {
+            margin-bottom: 50px;
+        }
+
+        .new-image {
+            overflow: hidden;
+            padding: 0;
+            margin: 0 3%;
+            border-radius: 8px;
+            background-color: #fff;
+            flex: 1;
+        }
+
+        .new-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .new-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .skip {
+            background-color: #FFFFFF;
+            width: 100%;
+            padding: 50px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .skips {
+            background-color: #BCB8B1;
+            width: 100%;
+            padding-top: 70px;
+            padding-left: 100px;
+            padding-bottom: 70px;
+            padding-right: 30px;
+        }
+
+        .new2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            /* padding sides */
+        }
+
+        .new2 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .new3 {
+            /* padding sides */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* center vertically */
+        }
+
+        .new3 .content {
+            max-width: 400px;
+            /* maximum width */
+            margin: 0;
+            /* reset margin */
+        }
+
+        .new3 h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .new3 p {
+            margin-bottom: 20px;
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+
+        .card,
+        .card img {
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .card-body {
+            padding-bottom: 0;
+        }
+
+        .containers {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+
+        .footer {
+            background-color: #8A817C;
+            color: #fff;
+            padding: 40px 0 20px;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            padding-left: 100px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section p,
+        .footer-section ul,
+        .footer-section a {
+            margin-bottom: 10px;
+            color: #bbb;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section .social a {
+            margin-right: 10px;
+            color: #bbb;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer-section .social a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #bbb;
+        }
+
+        .frame {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-button {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(250, 250, 250, 0.9);
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 85px;
+            /* Adjust padding as needed */
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .image-button:hover {
+            background-color: rgba(158, 158, 158, 0.7);
+            color: white;
+        }
+
+        .best {
+            margin: 0;
+        }
+
+        .text-navbar header {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        }
+
+        .text-navbar .mega-link {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        }
+
+        .custom-btn {
+            width: 130px;
+            height: 40px;
+            color: #000000;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .1),
+                4px 4px 5px 0px rgba(0, 0, 0, .1);
+            outline: none;
+        }
+
+        /* 7 */
+        .btn-7 {
+            line-height: 42px;
+            padding: 0;
+            border: none;
+        }
+
+        .btn-7 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn-7:before,
+        .btn-7:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            background: rgb(200, 200, 200);
+            box-shadow:
+                -3px -3px 10px 0px rgba(255, 255, 255, .9),
+                -1px -1px 1px 0px rgba(255, 255, 255, .9),
+                3px 3px 10px 0px rgba(0, 0, 0, .2),
+                2px 2px 3px 0px rgba(0, 0, 0, .3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-7:before {
+            height: 0%;
+            width: 2px;
+        }
+
+        .btn-7:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn-7:hover {
+            color: rgb(0, 0, 0);
+            background: transparent;
+        }
+
+        .btn-7:hover:before {
+            height: 100%;
+        }
+
+        .btn-7:hover:after {
+            width: 100%;
+        }
+
+        .btn-7 span:before,
+        .btn-7 span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: rgb(200, 200, 200);
+            box-shadow:
+                -7px -7px 20px 0px rgba(255, 255, 255, .9),
+                -4px -4px 5px 0px rgba(255, 255, 255, .9),
+                7px 7px 20px 0px rgba(0, 0, 0, .2),
+                4px 4px 5px 0px rgba(0, 0, 0, .3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-7 span:before {
+            width: 2px;
+            height: 0%;
+        }
+
+        .btn-7 span:after {
+            height: 2px;
+            width: 0%;
+        }
+
+        .btn-7 span:hover:before {
+            height: 100%;
+        }
+
+        .btn-7 span:hover:after {
+            width: 100%;
+        }
+        .about{
+            margin-bottom: 15px;
+        }
+
+
+        @media (max-width: 576px) {
+            .image-button {
+                padding: 6px 15px;
+                /* Adjust padding for even smaller screens */
+                font-size: 0.3rem;
+                /* Adjust font size for even smaller screens */
+            }
+        }
+
+
+
+        @media (max-width: 768px) {
+            .image-button {
+                padding: 5px 20px;
+                /* Adjust padding for smaller screens */
+                font-size: 0.5rem;
+                /* Adjust font size for smaller screens */
+            }
+
+            .new-image {
+                margin: 1%;
+            }
+
+            .new3 {
+                padding-top: 20px;
+                /* reduce top padding */
+            }
+
+            .new2 {
+                padding: 20px;
+                /* reduce padding */
+            }
+
+            .new3 h2 {
+                text-align: center;
+            }
+
+            .new3 .content {
+                max-width: none;
+                font-size: 10px;
+                text-align: justify;
+            }
+
+            .logo {
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
 
@@ -225,51 +597,62 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top p-0 px-lg-0">
         <div class="container-fluid max-vw-75 px-lg-5">
-            <div class="logo"><a href="">Eleganza</a></div>
-            <ul class="nav-link">
-                <li id="man" class="text-navbar"><a class="text" href="#">Man</a>
-                    <div class="mega-box">
-                        <div class="content">
-                            <div class="row picture">
-                                <img src="./assets/man.png" alt="">
-                            </div>
-                            <div class="row">
-                                <header>Top</header>
-                                <ul class="mega-link">
-                                    <li><a href="">Tshirts</a></li>
-                                    <li><a href="">Polo Shirts</a></li>
-                                    <li><a href="">Hoodies</a></li>
-                                    <li><a href="">Jacket</a></li>
-                                    <li><a href="">Knitwears</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Bottom</header>
-                                <ul class="mega-link">
-                                    <li><a href="">Jeans</a></li>
-                                    <li><a href="">Polo Jogger</a></li>
-                                    <li><a href="">Shorts</a></li>
-                                    <li><a href="">Pants</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Apparel</header>
-                                <ul class="mega-link">
-                                    <li><a href="">Bodysuit</a></li>
-                                    <li><a href="">Bottom</a></li>
-                                    <li><a href="">Tops</a></li>
-                                </ul>
+            <div class="logo"><a href="#">Eleganza</a></div>
+            <!-- Add Bootstrap's navbar toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Add the collapse wrapper -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li id="man" class="nav-item text-navbar">
+                        <a class="nav-link text" href="#">Man</a>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row picture">
+                                    <img src="./assets/man.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Top</header>
+                                    <ul class="mega-link">
+                                        <li><a href="#">Tshirts</a></li>
+                                        <li><a href="#">Polo Shirts</a></li>
+                                        <li><a href="#">Hoodies</a></li>
+                                        <li><a href="#">Jacket</a></li>
+                                        <li><a href="#">Knitwears</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Bottom</header>
+                                    <ul class="mega-link">
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Polo Jogger</a></li>
+                                        <li><a href="#">Shorts</a></li>
+                                        <li><a href="#">Pants</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Apparel</header>
+                                    <ul class="mega-link">
+                                        <li><a href="">Bodysuit</a></li>
+                                        <li><a href="">Bottom</a></li>
+                                        <li><a href="">Tops</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li id="ladies" class="text-navbar"><a class="text" href="">Ladies</a></li>
-                <li class="text-navbar"><a class="text" href="">Collab</a></li>
-                <li class="text-navbar"><a class="text" href="">Sale</a></li>
-                <li class="text-navbar"><a class="text" href="">History</a></li>
-            </ul>
+                    </li>
+                    <li id="ladies" class="nav-item text-navbar"><a class="nav-link text" href="#">Ladies</a>
+                    </li>
+                    <li class="nav-item text-navbar"><a class="nav-link text" href="#">Collab</a></li>
+                    <li class="nav-item text-navbar"><a class="nav-link text sale" href="#">Sale</a></li>
+                    <li class="nav-item text-navbar"><a class="nav-link text" href="#">History</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <!-- Swiper -->
     <div class="carousel">
         <div class="swiper mySwiper">
@@ -281,10 +664,242 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    <div class="container-fluid my-5 w-100">
+        <div class="mx-md-5 my-5">
+            <div class="text-new-collection">
+                <h1 class="fs-product text-center best" data-aos="zoom-in-up">New Collection</h1>
+                <p class="text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt</p>
+            </div>
+            <div>
+                <div class="container text-center">
+                    <div class="row align-items-start mt-7">
+                        <div class="col-12 col-md-4 new-image">
+                            <div class="frame position-relative">
+                                <img src="./assets/new1.png" alt="">
+                                <button class="image-button">Jacket</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 new-image">
+                            <div class="frame position-relative">
+                                <img src="./assets/new2.png" alt="">
+                                <button class="image-button">Dress</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 new-image">
+                            <div class="frame position-relative">
+                                <img src="./assets/new3.png" alt="">
+                                <button class="image-button">Hoodies</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div>
-        Halo
+
+            </div>
+        </div>
     </div>
+    <div class="container-fluid mt-7 skip">
+        <div class="row">
+            <div class="col-12 col-md-7 new2">
+                <img src="./assets/about.png" alt="">
+            </div>
+            <div class="col-12 col-md-5 new3">
+                <div class="content">
+                    <h1 class="best about">About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nesciunt velit consequatur
+                        numquam, tempora quia qui corporis non facere. Id labore velit doloribus modi assumenda, nobis
+                        reprehenderit laudantium incidunt autem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-7  skips">
+        <div class="row">
+            <div class="col-12 col-md-4 new3">
+                <div class="content">
+                    <h1 class="best"><strong>Best Seller</strong></h1>
+                    <h1 class="best"><strong>Product</strong></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nesciunt velit consequatur
+                        numquam, tempora quia qui corporis non facere. Id labore velit doloribus modi assumenda, nobis
+                        reprehenderit laudantium incidunt autem.</p>
+                    <button class="custom-btn btn-7"><span>Read More</span></button>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 new2">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/swiper7.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                    <p class="mb-1">Lorem Ipsum</p>
+                                    <p>Rp.100.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-5">
+        <div class="mx-md-5 my-5">
+            <div class="text-new-collection">
+                <h1 class="fs-product text-center best" data-aos="zoom-in-up">Our Collection</h1>
+                <p class="text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt</p>
+            </div>
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-2 row-cols-lg-5 g-5">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/new3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text mb-0"><strong>Lorem Ipsum</strong></p>
+                                <p class="mb-1">Lorem Ipsum</p>
+                                <p>Rp.100.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="containers">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We offer a wide range of trendy clothing for all seasons and occasions. Our mission is to provide
+                    high-quality fashion at affordable prices.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Siwalankerto Street, Surabaya</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> Eleganza@clothingstore.com</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eleganza. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             effect: 'fade',
@@ -297,6 +912,14 @@
             },
             speed: 500,
             loop: true
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3.5,
+            spaceBetween: 25,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
         });
     </script>
 </body>
