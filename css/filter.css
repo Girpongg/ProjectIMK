@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Libre+Franklin:ital,wght@0,600;1,600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 600;
+    color: rgb(70, 63, 58);
+    --dark-brown: rgb(70, 63, 58);
+    --light-brown: rgb(138, 129, 124);
+    --bg-color: #F4F3EE;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.filter-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.first-container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.sidebar-container {
+    width: 20%;
+}
+
+.second-container {
+    width: 75%;
+}
+
+.sidebar {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+
+.accordion-header,
+.accordion-item {
+    border: none !important;
+}
