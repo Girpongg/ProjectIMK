@@ -19,66 +19,329 @@
                     <h2>KATEGORI</h2>
                     <div class="accordion" id="categoryAccordion">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
+                            <h2 class="accordion-header" id="headingMen">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    data-bs-target="#collapseMen" aria-expanded="true" aria-controls="collapseMen">
                                     Men
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            <div id="collapseMen" class="accordion-collapse collapse" aria-labelledby="headingMen"
                                 data-bs-parent="#categoryAccordion">
-                                <div class="accordion-body">
-                                    Men accordion content
+                                <div class="accordion-body np">
+                                    <!-- Nested Accordion -->
+                                    <div class="accordion" id="menAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingMenTop">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Top
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingMenTop" data-bs-parent="#menAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>T-Shirts</li>
+                                                        <li>T-Shirts (Striped)</li>
+                                                        <li>T-Shirts (Oversized)</li>
+                                                        <li>T-Shirts (Long Sleeve)</li>
+                                                        <li>Polo Shirts</li>
+                                                        <li>Long Shirts</li>
+                                                        <li>Short Shirts</li>
+                                                        <li>Hoodies</li>
+                                                        <li>Sweaters</li>
+                                                        <li>Jackets | Vests</li>
+                                                        <li>Knitwears</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingMenBottom">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Bottom
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingMenBottom" data-bs-parent="#menAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>Jeans</li>
+                                                        <li>Chinos</li>
+                                                        <li>Jogger</li>
+                                                        <li>Shorts</li>
+                                                        <li>Pants</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingMenAcc">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Accessories
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingMenAcc" data-bs-parent="#menAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>Sandals</li>
+                                                        <li>Shoes</li>
+                                                        <li>Wallets</li>
+                                                        <li>Watches</li>
+                                                        <li>Belts</li>
+                                                        <li>Sunglasses</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
+                            <h2 class="accordion-header" id="headingLadies">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    data-bs-target="#collapseLadies" aria-expanded="false"
+                                    aria-controls="collapseLadies">
                                     Ladies
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            <div id="collapseLadies" class="accordion-collapse collapse" aria-labelledby="headingLadies"
                                 data-bs-parent="#categoryAccordion">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="accordion-body np">
+                                    <!-- Nested Accordion -->
+                                    <div class="accordion" id="ladiesAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingLadiesTop">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Top
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingLadiesTop" data-bs-parent="#ladiesAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>T-Shirts (Short Sleeve)</li>
+                                                        <li>T-Shirts (Long Sleeve)</li>
+                                                        <li>Blouses</li>
+                                                        <li>Dresses</li>
+                                                        <li>Sweaters</li>
+                                                        <li>Jackets</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingLadiesBottom">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Bottom
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingLadiesBottom" data-bs-parent="#ladiesAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>Skirt</li>
+                                                        <li>Pants</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingLadiesAcc">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Accessories
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingLadiesAcc" data-bs-parent="#ladiesAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>Scarves</li>
+                                                        <li>Bags</li>
+                                                        <li>Sandals</li>
+                                                        <li>Shoes</li>
+                                                        <li>Wallets</li>
+                                                        <li>Watches</li>
+                                                        <li>Hats</li>
+                                                        <li>Sunglasses</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    data-bs-target="#collapseKids" aria-expanded="false" aria-controls="collapseKids">
                                     Kids
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseKids" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#categoryAccordion">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="accordion-body np">
+                                    <!-- Nested Accordion -->
+                                    <div class="accordion" id="kidsAccordion">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingKidsBoys">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseBoys"
+                                                    aria-expanded="true" aria-controls="collapseBoys">
+                                                    Boys
+                                                </button>
+                                            </h2>
+                                            <div id="collapseBoys" class="accordion-collapse collapse"
+                                                aria-labelledby="headingKidsBoys" data-bs-parent="#kidsAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>T-Shirts</li>
+                                                        <li>Shirts</li>
+                                                        <li>Sweaters | Hoodies</li>
+                                                        <li>Jackets</li>
+                                                        <li>Pants</li>
+                                                        <li>Accessories</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingKidsGirls">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseGirls"
+                                                    aria-expanded="false" aria-controls="collapseGirls">
+                                                    Girls
+                                                </button>
+                                            </h2>
+                                            <div id="collapseGirls" class="accordion-collapse collapse"
+                                                aria-labelledby="headingKidsGirls" data-bs-parent="#kidsAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>T-Shirts</li>
+                                                        <li>Dress & Blouses</li>
+                                                        <li>Shirt & Pajamas</li>
+                                                        <li>Sweaters</li>
+                                                        <li>Jackets</li>
+                                                        <li>Pants</li>
+                                                        <li>Skirt</li>
+                                                        <li>Accessories</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingKidsBaby">
+                                                <button class="nested-button accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseBaby"
+                                                    aria-expanded="false" aria-controls="collapseBaby">
+                                                    Baby
+                                                </button>
+                                            </h2>
+                                            <div id="collapseBaby" class="accordion-collapse collapse"
+                                                aria-labelledby="headingKidsBaby" data-bs-parent="#kidsAccordion">
+                                                <div class="accordion-body last-acc">
+                                                    <ol class="mens-top category-list">
+                                                        <li>New Born</li>
+                                                        <li>Toddler</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="size-container">
+                        <h2>UKURAN</h2>
+                        <div class="checkbox-container"><input type="checkbox"> S</div>
+                        <div class="checkbox-container"><input type="checkbox"> M</div>
+                        <div class="checkbox-container"><input type="checkbox"> L</div>
+                        <div class="checkbox-container"><input type="checkbox"> XL</div>
+                        <div class="checkbox-container"><input type="checkbox"> FR</div>
+                    </div>
+
+                    <div class="size-container">
+                        <h2>UKURAN</h2>
+                        <div class="checkbox-container"><input type="checkbox"> Biru</div>
+                        <div class="checkbox-container"><input type="checkbox"> Hijau</div>
+                        <div class="checkbox-container"><input type="checkbox"> Putih</div>
+                        <div class="checkbox-container"><input type="checkbox"> Hitam</div>
+                        <div class="checkbox-container"><input type="checkbox"> Coklat</div>
+                        <div class="checkbox-container"><input type="checkbox"> Orange</div>
+                        <div class="checkbox-container"><input type="checkbox"> Kuning</div>
+                        <div class="checkbox-container"><input type="checkbox"> Pink</div>
+                        <div class="checkbox-container"><input type="checkbox"> Abu-abu</div>
+                    </div>
+
+                    <div class="size-container">
+                        <h2>HARGA</h2>
+                        <input class="price-input" type="text" placeholder="Harga Minimal">
+                        <input class="price-input" type="text" placeholder="Harga Maksimal">
                     </div>
                 </div>
             </div>
             <div class="second-container">
                 <div class="filter-container">
+                    <div class="filter-result">
+                        <p>22 Results Found</p>
+                        <button>Reset Filter</button>
+                    </div>
 
+                    <div class="filter-dropdown">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Latest</option>
+                            <option value="1">On Discount</option>
+                            <option value="2">Cheapest</option>
+                            <option value="3">Most Expensive</option>
+                            <option value="4">Best Sellers</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="items-container">
-
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/polo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hugo Boss Polo Shirt Cotton Classic Fit Black 050324</h5>
+                            <p class="card-text">Rp 2.100.000</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/polo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hugo Boss Polo Shirt Cotton Classic Fit Black 050324</h5>
+                            <p class="card-text">Rp 2.100.000</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/polo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hugo Boss Polo Shirt Cotton Classic Fit Black 050324</h5>
+                            <p class="card-text">Rp 2.100.000</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/polo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hugo Boss Polo Shirt Cotton Classic Fit Black 050324</h5>
+                            <p class="card-text">Rp 2.100.000</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
