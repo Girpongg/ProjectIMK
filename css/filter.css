@@ -19,7 +19,7 @@ body {
 
 .filter-section {
     width: 100vw;
-    height: 100vh;
+    height: 1100px;
     display: flex;
     justify-content: center;
 }
@@ -33,6 +33,7 @@ body {
 
 .sidebar-container {
     width: 17%;
+    height: 96%;
 }
 
 .second-container {
