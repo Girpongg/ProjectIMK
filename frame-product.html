@@ -8,36 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/frame-product.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <section class="details-section">
         <div class="details-container">
-                <div class="image-preview-container">
-                    <div class="image-preview active">
-                        <img src="assets/dress-preview1.png">
-                    </div>
-                    <div class="image-preview">
-                        <img src="assets/dress-preview4.png">
-                    </div>
-                    <div class="image-preview">
-                        <img src="assets/dress-preview3.png">
-                    </div>
-                    <div class="image-preview">
-                        <img src="assets/dress-preview4.png">
-                    </div>
+            <div class="image-preview-container">
+                <div class="image-preview active">
+                    <img src="assets/dress-preview1.png">
                 </div>
-                <div class="image-details">
-                    <img class="detail-img detail1 active" src="assets/dress1.png">
-                    <img class="detail-img detail2" src="assets/dress4.png">
-                    <img class="detail-img detail3" src="assets/dress3.png">
-                    <img class="detail-img detail4" src="assets/dress4.png">
+                <div class="image-preview">
+                    <img src="assets/dress-preview4.png">
                 </div>
+                <div class="image-preview">
+                    <img src="assets/dress-preview3.png">
+                </div>
+                <div class="image-preview">
+                    <img src="assets/dress-preview4.png">
+                </div>
+            </div>
+            <div class="image-details">
+                <img class="detail-img detail1 active" src="assets/dress1.png">
+                <img class="detail-img detail2" src="assets/dress4.png">
+                <img class="detail-img detail3" src="assets/dress3.png">
+                <img class="detail-img detail4" src="assets/dress4.png">
+            </div>
             <div class="product-details">
                 <!-- <div class="product-status">
                     <p style="color:green; font-size: 1.1rem;">In stock. We'll ship tomorrow</p>
                     <div>
-                        <p style="font-size: 1.1rem;"><i class="fa-regular fa-heart" style="margin-right: 5px;"></i>Add 
+                        <p style="font-size: 1.1rem;"><i class="fa-regular fa-heart" style="margin-right: 5px;"></i>Add
                             to Wishlist</p>
                     </div>
                 </div> -->
@@ -206,7 +211,7 @@
         var imageDetails = document.querySelectorAll('.detail-img');
         var imagePreviews = document.querySelectorAll('.image-preview');
         imagePreviews.forEach((preview, index) => {
-            preview.addEventListener('click', function () {
+            preview.addEventListener('click', function() {
                 imageDetails.forEach(img => {
                     img.classList.remove('active');
                 });
@@ -222,7 +227,7 @@
         var sizes = document.querySelectorAll('.size');
 
         sizes.forEach((size, index) => {
-            size.addEventListener('click', function () {
+            size.addEventListener('click', function() {
                 sizes.forEach(j => {
                     j.classList.remove('active');
                 });
@@ -233,7 +238,7 @@
         var tabs = document.querySelectorAll('.tabs-title');
         var tabsContent = document.querySelectorAll('.tabs-content');
         tabs.forEach((tab, index) => {
-            tab.addEventListener('click', function () {
+            tab.addEventListener('click', function() {
                 tabs.forEach(j => {
                     j.classList.remove('active');
                 });
@@ -249,7 +254,7 @@
 
         var cartButton = document.querySelector('.cart-button');
 
-        cartButton.addEventListener('click', function () {
+        cartButton.addEventListener('click', function() {
             Swal.fire({
                 title: '',
                 icon: 'success',
@@ -261,7 +266,6 @@
                 }
             });
         });
-
     </script>
 </body>
 
