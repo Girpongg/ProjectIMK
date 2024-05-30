@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <style>
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            background: #F4F3EE;
+            color: #000;
+            margin-left: 30px;
+            overflow-x: hidden;
+        }
+
+        .table-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin-top: 50px;
+            font-weight: bold;
+            border-bottom: 2px solid #BCB8B1;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            width: 95%;
+        }
+
+        .card-container{
+            grid-gap: 10px;
+            margin-top: 10px;
+            padding-left: 15px;
+            width: 95%;
+            background-color: white;
+            border: 2px solid #BCB8B1;
+            padding-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .show-details{
+            display: flex; 
+            justify-content: space-between;
+            padding-top: 10px; 
+            padding-bottom: 10px;
+        }
+
+        .show-dropdown .show-details {
+            display: none;
+        }
+    
+        .show-dropdown .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 25px;">Purchase History</h1>
+    <div class="table-container">
+        <div style="padding-left: 0px;">Product</div>
+        <div style="padding-left: 0px;">Status</div>
+        <div style="padding-left: 0px;">Added on</div>
+        <div style="padding-left: 0px;">Sending date</div>
+    </div>
+
+    <div>
+        <div class="card-container">
+            <div style="display: grid;grid-template-columns: 2fr 1fr 1fr 1fr;">
+                <div style="display: flex; gap: 30px; margin-top: 30px;">
+                    <img src="https://via.placeholder.com/150" alt="product" style="width: 100px; height: 100px;">
+                    <div>
+                        <h3 style="margin-top: 5px; margin-bottom: 0px;">Lorem Ipsum</h3>
+                        <h5 style="margin-top: 5px;">Size: 44</h5>
+                        <h5 >Rp. 100.000</h5>
+                    </div>
+                </div>
+        
+                <div style="margin-top: 30px;">
+                    <h5>On Delivery</h5>
+                </div>
+        
+                <div style="margin-top: 30px;">
+                    <h5>13-05-2024</h5>
+                </div>
+        
+                
+                <div style="margin-top: 30px;">
+                    <h5>15-05-2024</h5>
+                </div>
+            </div>
+
+            <div class="show-details">
+                <h5 style="margin-bottom: 0px; margin-top: 0px;">
+                    Show Details
+                </h5>
+    
+                <svg style="width: 10px; margin-right: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+            </div>
+
+            <div class="dropdown-content" >
+                <h5 style="font-size: 20px;">Lorep Ipsum</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et perspiciatis corrupti excepturi esse, nulla omnis unde laudantium totam architecto veritatis nobis ea, velit iste voluptatum voluptas eveniet aliquam quidem libero, exercitationem praesentium doloremque! Officiis corrupti saepe magni facilis eveniet, et repellendus voluptatem velit odio optio temporibus dolorum eum molestiae esse voluptas tempora quaerat? Accusantium ipsa doloremque vel obcaecati, architecto error asperiores sint nobis provident accusamus dignissimos adipisci iste. Quasi non error ad sapiente porro. Pariatur temporibus sint qui ullam suscipit, distinctio illo atque autem repudiandae voluptatibus amet? Eveniet, esse ad vero possimus amet quidem explicabo deleniti error, porro eum harum.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const showDetailsBtn = document.querySelector('.show-details');
+            const detailsContainer = document.querySelector('.card-container');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            showDetailsBtn.addEventListener('click', function() {
+                if (dropdownContent.style.display === 'block') {
+                    detailsContainer.classList.remove('show-dropdown');
+                    dropdownContent.style.display = 'none';
+                    return;
+                }
+                dropdownContent.style.display = 'block';
+            });
+
+        });
+    </script>
+    
+</body>
+</html>
