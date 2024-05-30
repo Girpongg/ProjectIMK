@@ -186,7 +186,7 @@
             transform-origin: bottom right;
             transition: transform 0.5s ease;
             transform: scaleX(0);
-        }  
+        }
 
         .text-navbar .text:hover::after {
             transform-origin: bottom left;
@@ -240,7 +240,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-columns: 1.8fr 1fr;
             grid-gap: 10px;
         }
 
@@ -248,27 +248,26 @@
             display: grid;
             grid-template-rows: auto;
             grid-gap: 15px;
-            margin-left: 20px;
+            margin-left: 22px;
             margin-right: 170px;
             padding-left: 20px;
             padding-right: 10px;
-            width: 80%;
+            width: 85%;
             background-color: #eee;
-            height: 580px;
+            height: 300px;
             padding-top: 0px;
-            border-radius: 10px;   
+            border-radius: 10px;
         }
+
         .card {
             display: grid;
             grid-template-columns: 1fr 2fr;
             background-color: #F4F3EE;
             height: fit-content;
-            padding-right: 20px;
             padding-top: 20px;
             padding-bottom: 20px;
             border-radius: 10px;
-            margin-left: 30px;
-            margin-right: 30px;
+            margin-left: 10px;
         }
 
         img {
@@ -322,7 +321,7 @@
             margin: 15% auto;
             /* 15% from the top and centered */
             padding: 20px;
-            border: 1px solid #888; 
+            border: 1px solid #888;
             width: 80%;
             /* Could be more or less, depending on screen size */
             max-width: 400px;
@@ -344,6 +343,7 @@
             text-decoration: none;
             cursor: pointer;
         }
+
         .closes {
             color: #aaa;
             float: right;
@@ -393,10 +393,12 @@
         }
 
         .order {
-            margin-top: 30px;
             border: 1px solid #bcbcbc;
-            width: 100%;
+            width: 80%;
+            margin-top: 0 !important;
             padding: 20px;
+            margin-bottom: 30px;
+            margin-left: 50px;
             border-radius: 15px;
         }
 
@@ -442,13 +444,12 @@
         .informasi {
             justify-content: center !important;
             align-items: center;
-            background-color: #F4F3EE;
-            padding: 30px;
-            padding-top: 8px;
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            background-color: #eee;
             border-radius: 10px;
-            height: fit-content;
+            margin-left: 60px;
+            padding: 30px;
         }
+
 
         .about {
             margin-bottom: 15px;
@@ -499,32 +500,135 @@
             color: white;
         }
 
-        .crumb{
+        .crumb {
             display: flex;
             position: sticky;
-            margin-left: -1294px;
+            margin-left: -1105px;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: #000;
         }
-        .kuy{
+
+        .kuy {
             margin-top: -20px !important;
         }
+
         .sticky-header {
             position: sticky;
             top: 0;
             background-color: #eee;
             z-index: 1000;
             width: 100%;
-            padding: 10px 0;
+            padding-left: 7px !important;
+            padding: 0;
+            margin: 0;
             height: 100vh;
             display: grid;
             grid-template-rows: 1fr 10fr;
             text-align: center;
         }
+
         p {
             margin-top: 80px;
+        }
+
+        .container_tulisan {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #3f3f3f;
+        }
+
+        .input-text {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #BCB8B1;
+            border-radius: 2px;
+        }
+
+        input {
+            background-color: #eee;
+        }
+
+        .input-text:hover {
+            border: 2px solid #463F3A;
+        }
+
+        .dropdown-menu {
+            width: 32%;
+        }
+
+        .dropdown-item:active {
+            background-color: #463F3A;
+            color: white;
+        }
+
+        .harga {
+            margin-left: 15px !important;
+            margin-top: 7px !important;
+        }
+
+        .akhir {
+            margin-top: 0px !important;
+            margin-right: 20px;
+            margin-left: 35px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .return-to-chart {
+            width: 85%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .proceed-to-shipping {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .infor {
+            color: #3f3f3f;
+            margin: 0;
+            line-height: 7px;
+            font-size: 15px;
+        }
+
+        .siap {
+            color: #3f3f3f;
+            line-height: 70px;
+        }
+
+        .proceed-to-shipping {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #BCB8B1;
+            color: white;
+            margin-right: 40px;
+            border: none;
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 50%;
+        }
+
+        .button_container:hover {
+            background-color: #463F3A;
+            color: white;
         }
     </style>
 </head>
@@ -637,216 +741,261 @@
             </div>
         </div>
     </nav>
-            <div class="crumb">
-                <a href="home.html"><p style="margin-right: 5px;">Home</p></a>
-                <p style="margin-right: 5px;">></p>
-                <p style="margin-right: 5px;">Cart</p>
-            </div>
-    <div class="grid-container">
-        <div class="sticky-header">
-
-
-            <div class="card-container" style="overflow-y: scroll;">
-                <div class="card">
-                    <div class="card-detail">
-                        <img src="./assets/swiper3.png" class="card-img-top" alt="...">
-                    </div>
-                    <div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 80px;">
-                            <div style="padding-left: 20px; width: 100%;">
-                                <div class="tulisan-judul-harga">
-                                    <h3 class="nama">Black Flower Dress</h3>
-                                    <p style="margin-top: 5px;"><span class="closes kuy">&times;</span></p>
-                                </div>
-                                <p style="margin-top: -15px; 
-                                text-align: start;">
-                                        Size:
-                                        44</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; justify-content: space-between;">
-                            <div>
-                                <svg style="width: 15px; padding-left: 15px;" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
-                                </svg>
-                                Rp. 200.000
-                            </div>
-                            <div class="quantity">
-                                <input type="number" min="1" max="100" value="1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-detail">
-                        <img src="./assets/swiper5.png" class="card-img-top" alt="...">
-                    </div>
-                    <div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 80px;">
-                            <div style="padding-left: 20px; width: 100%;">
-                                <div class="tulisan-judul-harga">
-                                    <h3 class="nama">Black Flower Dress</h3>
-                                    <p style="margin-top: 5px;"><span class="closes kuy">&times;</span></p>
-                                </div>
-                                <p style="margin-top: -15px;  
-                                text-align: start;">
-                                        Size:
-                                        44</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; justify-content: space-between;">
-                            <div>
-                                <svg style="width: 15px; padding-left: 15px;" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
-                                </svg>
-                                Rp. 200.000
-                            </div>
-                            <div class="quantity">
-                                <input type="number" min="1" max="100" value="1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-detail">
-                        <img src="./assets/swiper4.png" class="card-img-top" alt="...">
-                    </div>
-                    <div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 80px;">
-                            <div style="padding-left: 20px; width: 100%;">
-                                <div class="tulisan-judul-harga">
-                                    <h3 class="nama">Black Flower Dress</h3>
-                                    <p style="margin-top: 5px;"><span class="closes kuy">&times;</span></p>
-                                </div>
-                                <p style="margin-top: -15px;  
-                                text-align: start;">
-                                        Size:
-                                        44</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; justify-content: space-between;">
-                            <div>
-                                <svg style="width: 15px; padding-left: 15px;" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
-                                </svg>
-                                Rp. 200.000
-                            </div>
-                            <div class="quantity">
-                                <input type="number" min="1" max="100" value="1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="informasi">
-            <div class="order">
-                <div style=" font-weight: 500; font-size: 20px; margin-bottom: 20px;">TOTAL ITEMS
-                </div>
-                <div class="container_tulisan">
-                    <div>Items</div>
-                    <div>3</div>
-                </div>
-            </div>
-            <div class="order">
-                <div style=" font-weight: 500; font-size: 20px; margin-bottom: 20px;">ORDER SUMMARY
-                </div>
-                <div class="container_tulisan">
-                    <div>3 items</div>
-                    <div>Rp. 700.000</div>
-                </div>
-                <div class="container_tulisan">
-                    <div>Sales Tax</div>
-                    <div>Rp. 10.000</div>
-                </div>
-                <div class="container_tulisan">
-                    <div>Delivery</div>
-                    <div>Free</div>
-                </div>
-                <div class="container_tulisan_total">
-                    <div style="font-weight: bold;">Total</div>
-                    <div>Rp. 710.000</div>
-                </div>
-                <div style="display: flex;" id="myBtn">
-                    <svg style="width: 13px; margin-top: 10px;" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
-                    </svg>
-                    <div style="margin-top: 13px; font-size: 13px; margin-left: 10px; text-decoration: underline;">USE
-                        A
-                        PROMO CODE</div>
-                </div>
-                <div>
-                    <button class="button_container checkout">Checkout</button>
-                </div>
-            </div>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Enter promo code:</p>
-                    <input type="text" id="promoCodeInput" placeholder="Enter your promo code">
-                    <button id="applyPromoButton">Apply</button>
-                </div>
-
-            </div>
-        </div>
-
+    <div class="crumb">
+        <a href="home.html">
+            <p style="margin-right: 5px;">Home</p>
+        </a>
+        <p style="margin-right: 5px;">></p>
+        <a href="cart.html">
+            <p style="margin-right: 5px;">Cart</p>
+        </a>
+        <p style="margin-right: 5px;">></p>
+        <a href="checkout-informations.html">
+            <p style="margin-right: 5px;">Checkout</p>
+        </a>
+        <p style="margin-right: 5px;">></p>
+        <a href="cart.html">
+            <p style="margin-right: 5px;">Shipping</p>
+        </a>
     </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+    <div class="grid-container">
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        <div class="informasi" style="overflow-y: scroll; height: 600px;">
+            <div>
+                <h3 class="siap" style="margin-bottom: 0px;">REVIEW YOUR INFORMATION</h3>
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 0px;">
+                    <div style="display: flex; gap: 10px;">
+                        <p class="mt-3" style="display: flex; gap: 50px;"> <span
+                                style="font-weight: bold; margin-right: 10px;">Name</span>Maria Martha Wijaya</p>
+                    </div>
+                </div>
+                <hr style="width: 95%; margin-top: 0px; margin-bottom: 0px;">
 
-        var applyPromoButton = document.getElementById("applyPromoButton");
 
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 0px;">
+                    <div style="display: flex; gap: 10px;">
+                        <p class="mt-3" style="display: flex; gap: 20px;"> <span
+                                style="font-weight: bold; margin-right: 20px;">Contact</span>maria19@gmail.com,
+                            081123456789</p>
+                    </div>
+                </div>
+                <hr style="width: 95%; margin-top: 0px; margin-bottom: 0px;">
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 0px;">
+                    <div style="display: flex; gap: 10px;">
+                        <p class="mt-3" style="display: flex; gap: 15px;"> <span
+                                style="font-weight: bold; margin-right: 20px;">Address</span>Jalan Dukuh Kupang Timur
+                            XV / 60</p>
+                    </div>
+                </div>
 
-        applyPromoButton.onclick = function() {
-            var promoCode = document.getElementById("promoCodeInput").value;
-            if (promoCode === "KODEPROMO") {
-                alert("Promo code applied!");
-                modal.style.display = "none";
-            } else {
-                alert("Invalid promo code!");
+                <hr style="width: 95%; margin-top: 0px; margin-bottom: 0px;">
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 0px;">
+                    <div style="display: flex; gap: 10px;">
+                        <p class="mt-3" style="display: flex; gap: 15px;"> <span
+                                style="font-weight: bold; margin-right: 20px;">Shipping</span>Pick up in store</p>
+                    </div>
+                </div>
+                <hr style="width: 95%; margin-top: 0px; margin-bottom: 75px;">
+
+                <h3 class="siap" style="margin-bottom: 0px;">SHIPPING METHODS</h3>
+
+                <div style="display: flex; justify-content: space-between; width: 100%;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="radio" name="Shipping">
+                        <p class="mt-3" style="font-size: 15px;">Credit card</p>
+                    </div>
+
+                    <div style="margin-top: 20px; margin-right: 80px; display: flex;">
+                        <img src="cc1.png" alt="" style="width: 30px; height: 25px;" class="mt-1">
+                        <img src="cc2.png" alt="" style="width: 30px; height: 25px;" class="mt-1">
+                    </div>
+                </div>
+                <hr style="width: 95%; margin-top: 0px; margin-bottom: 20px;">
+
+
+                <h5 class="infor">CARD NUMBER</h5>
+                <input type="text" class="input-text mb-3" placeholder="Please enter a card number"
+                    style="margin-bottom: 0px;">
+
+                <h5 class="infor">NAME ON CARD</h5>
+                <input type="text" class="input-text mb-3" placeholder="Please enter a name"
+                    style="margin-bottom: 0px;">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; width: 97%;">
+
+                    <div>
+                        <h5 class="infor">CARD NUMBER</h5>
+                        <input type="text" class="input-text mb-3" placeholder="Please enter a card number"
+                            style="margin-bottom: 0px;">
+                    </div>
+
+                    <div>
+                        <h5 class="infor">CARD NUMBER</h5>
+                        <input type="text" class="input-text mb-3" placeholder="Please enter a card number"
+                            style="margin-bottom: 0px;">
+                    </div>
+
+                </div>
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 0px;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="radio" name="Shipping">
+                        <p class="mt-3" style="margin-right: 0px; font-size: 15px;">Pay with</p>
+                        <img src="affirm-removebg-preview.png" alt="" style="width: 50px; height: 25px;"
+                            class="mt-3">
+                    </div>
+
+                    <div style="margin-top: 20px; margin-right: 50px; text-align: end; color: #463F3A;font-size: 15px;">
+                        you will be redirected to Affirm
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 0px;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="radio" name="Shipping">
+                        <p class="mt-3" style="margin-right: 0px;font-size: 15px;">Pay with</p>
+                        <img src="paypal-784404_1280.png" alt=""
+                            style="width: 55px; height: 35px; margin-top: 13px;">
+                    </div>
+
+                    <div style="margin-top: 20px; margin-right: 50px; text-align: end; color: #463F3A;font-size: 15px;">
+                        you will be redirected to PayPal website
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 0px;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="radio" name="Shipping">
+                        <p class="mt-3" style="margin-right: 0px;font-size: 15px;">Pay with</p>
+                        <img src="2560px-Amazon_Pay_logo.svg.png" alt=""
+                            style="width: 55px; height: 15px; margin-top: 25px;">
+                    </div>
+
+                    <div style="margin-top: 20px; margin-right: 50px; text-align: end; color: #463F3A;font-size: 15px;">
+                        you will be redirected to Amazon Pay
+                    </div>
+                </div>
+
+                <br>
+                <div class="proceed-to-shipping">
+                    <button class="button_container mb-1" style="font-size: larger; font-weight: bold;">Proceed to
+                        Payment</button>
+                </div>
+
+                <div class="mb-3 return-to-chart">
+                    <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                    </svg>
+                    <div>
+                        Return to information
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="sticky-header">
+            <div class="akhir">
+                <div class="order">
+                    <div style=" font-weight: 500; font-size: 20px; margin-bottom: 20px;">REVIEW YOUR CART
+                    </div>
+                    <div class="container_tulisan">
+                        <div>Items</div>
+                        <div>3</div>
+                    </div>
+                    <div class="container_tulisan">
+                        <div><strong>Total</strong></div>
+                        <div><strong>Rp. 710.000</strong></div>
+                    </div>
+                </div>
+                <div class="card-container" style="overflow-y: scroll;">
+                    <div class="card">
+                        <div class="card-detail">
+                            <img src="./assets/swiper3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 80px;">
+                                <div style="padding-left: 20px; width: 100%;">
+                                    <div class="tulisan-judul-harga">
+                                        <h3 class="nama">Black Flower Dress</h3>
+
+                                    </div>
+                                    <p style="margin-top: 0px;  
+                                text-align: start;">
+                                        Size:
+                                        44</p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="harga">
+                                    Rp. 200.000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-detail">
+                            <img src="./assets/swiper3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 80px;">
+                                <div style="padding-left: 20px; width: 100%;">
+                                    <div class="tulisan-judul-harga">
+                                        <h3 class="nama">Black Flower Dress</h3>
+
+                                    </div>
+                                    <p style="margin-top: 0px;  
+                                text-align: start;">
+                                        Size:
+                                        44</p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="harga">
+                                    Rp. 200.000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-detail">
+                            <img src="./assets/swiper3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 80px;">
+                                <div style="padding-left: 20px; width: 100%;">
+                                    <div class="tulisan-judul-harga">
+                                        <h3 class="nama">Black Flower Dress</h3>
+
+                                    </div>
+                                    <p style="margin-top: 0px;  
+                                text-align: start;">
+                                        Size:
+                                        44</p>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="harga">
+                                    Rp. 200.000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script>
+            function changeButtonText(text) {
+                document.getElementById('dropdownMenuButton2').innerText = text;
             }
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+        </script>
 </body>
 
 </html>
