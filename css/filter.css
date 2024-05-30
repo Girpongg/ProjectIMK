@@ -415,3 +415,7 @@ ol {
 .card img {
     height: 320px;
 }
+
+.href{
+    text-decoration: none !important;
+}
