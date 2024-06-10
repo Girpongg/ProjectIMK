@@ -26,20 +26,50 @@
         background: #cccccc;
     }
 
+    .image-preview {
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1.5px solid var(--light-brown);
+        height: 130px;
+        cursor: pointer;
+        width: 108px;
+    }
+
+    .image-preview.active {
+        border: 2px solid black;
+
+    }
+
+    .image-preview:hover {
+        border: 2px solid black;
+    }
+
+    .image-details {
+        width: 27%;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 15px;
+        border: .5px solid var(--dark-brown);
+        box-shadow: 0 25px 50px -9px rgb(0 0 0 / 0.20);
+        display: flex;
+        justify-content: center;
+    }
+
     .swiper-section {
         margin-top: -400px;
         margin-bottom: 50px;
         margin-left: 110px;
         margin-right: 110px;
     }
+
     .swipe {
         color: #636363;
     }
-    body{
-        background-color: #eee;
-    
-    }
 
+    body {
+        background-color: #eee;
+
+    }
 </style>
 
 <body>
@@ -92,6 +122,41 @@
                         </div>
                     </li>
                     <li id="ladies" class="nav-item text-navbar"><a class="nav-link text" href="#">Ladies</a>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row picture">
+                                    <img src="./assets/woman.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Top</header>
+                                    <ul class="mega-link">
+                                        <li><a href="filter.html">Tshirts</a></li>
+                                        <li><a href="filter.html">Sweaters</a></li>
+                                        <li><a href="filter.html">Dresses</a></li>
+                                        <li><a href="filter.html">Shirts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Bottom</header>
+                                    <ul class="mega-link">
+                                        <li><a href="filter.html">Jeans</a></li>
+                                        <li><a href="filter.html">Pants</a></li>
+                                        <li><a href="filter.html">Skirt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Accessories</header>
+                                    <ul class="mega-link">
+                                        <li><a href="filter.html">Bags</a></li>
+                                        <li><a href="filter.html">Sandals</a></li>
+                                        <li><a href="filter.html">Shoes</a></li>
+                                        <li><a href="filter.html">Socks</a></li>
+                                        <li><a href="filter.html">Wallets</a></li>
+                                        <li><a href="filter.html">Hats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item text-navbar"><a class="nav-link text" href="#">Collab</a></li>
                     <li class="nav-item text-navbar"><a class="nav-link text sale" href="#">Sale</a></li>
@@ -189,7 +254,7 @@
                     </div>
                 </div> -->
                 <div class="product-title">
-                    <h1>FLOWER DRESS</h1>
+                    <h2 style="margin-top: 8px;">FLOWER DRESS</h2>
                 </div>
                 <div class="product-rating">
                     <i class="fa-solid fa-star"></i>
@@ -202,7 +267,7 @@
 
 
                 <div class="product-price">
-                    <h1>Rp500.000</h1>
+                    <h4 style="margin-top: 4px;">Rp500.000</h4>
                 </div>
                 <div class="product-desc">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nam possimus suscipit, fuga,
@@ -262,15 +327,10 @@
                         maxime quaerat a beatae ex architecto mollitia sapiente! Error commodi blanditiis ut
                         voluptatibus molestias harum, eum tempora itaque aliquam excepturi sit quia enim eveniet ab
                         consequatur fugit cumque necessitatibus veniam! Accusamus nesciunt amet excepturi libero, iste
-                        praesentium corrupti veritatis eaque architecto consectetur quidem velit. Perspiciatis aut
-                        consequatur sit minima vitae accusantium totam tempore, libero ducimus nostrum excepturi! Animi,
-                        nobis pariatur sit tenetur officiis possimus dignissimos, distinctio quasi esse odio eveniet
-                        earum illum repellendus aperiam voluptates.</p>
+                        praesentium corrupti veritatis eaque architecto consectetur quidem velit.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, deserunt debitis corrupti
                         perspiciatis optio aspernatur a praesentium nulla non, dolorum fuga possimus expedita corporis
-                        vero
-                        voluptatem facere dolores dolor quo ratione eius rerum nobis! Incidunt vel eligendi odit dolores
-                        voluptatibus.</p>
+                        vero.</p>
                 </div>
                 <div class="tabs-content">
                     <p>Care lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum expedita sit
@@ -280,14 +340,8 @@
                         voluptatibus molestias harum, eum tempora itaque aliquam excepturi sit quia enim eveniet ab
                         consequatur fugit cumque necessitatibus veniam! Accusamus nesciunt amet excepturi libero, iste
                         praesentium corrupti veritatis eaque architecto consectetur quidem velit. Perspiciatis aut
-                        consequatur sit minima vitae accusantium totam tempore, libero ducimus nostrum excepturi! Animi,
-                        nobis pariatur sit tenetur officiis possimus dignissimos, distinctio quasi esse odio eveniet
+                        consequatur sit minima vitae accusantium totam tempore, distinctio quasi esse odio eveniet
                         earum illum repellendus aperiam voluptates.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, deserunt debitis corrupti
-                        perspiciatis optio aspernatur a praesentium nulla non, dolorum fuga possimus expedita corporis
-                        vero
-                        voluptatem facere dolores dolor quo ratione eius rerum nobis! Incidunt vel eligendi odit dolores
-                        voluptatibus.</p>
                 </div>
                 <div class="tabs-content">
                     <div class="review-container">

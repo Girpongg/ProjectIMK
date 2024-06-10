@@ -39,6 +39,40 @@
             overflow-y: hidden;
         }
 
+        .cart-modal {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            padding-top: 25px;
+            background-color: #eee;
+        }
+
+        .button_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(138, 129, 124) !important;
+            color: white;
+            margin-right: 40px;
+            border: none;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 50%;
+        }
+
+        .button_container:hover {
+            background-color: #463F3A !important;
+            color: white;
+        }
+
+        .cart-confirm {
+            width: 400px;
+            background-color: rgb(138, 129, 124) !important;
+            margin-top: 5px;
+        }
+
+
+
         nav {
             background-color: #F4F3EE !important;
             position: fixed;
@@ -207,24 +241,6 @@
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
         }
 
-        .button_container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #BCB8B1;
-            color: white;
-            width: 100px;
-            height: 40px;
-            margin-top: 50px;
-            margin-right: 40px;
-            border: none;
-            border-radius: 10px;
-        }
-
-        .button_container:hover {
-            background-color: #463F3A;
-            color: white;
-        }
 
         .checkout {
             width: 100%;
@@ -614,24 +630,6 @@
             justify-content: center;
         }
 
-        .button_container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #BCB8B1;
-            color: white;
-            margin-right: 40px;
-            border: none;
-            border-radius: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            width: 50%;
-        }
-
-        .button_container:hover {
-            background-color: #463F3A;
-            color: white;
-        }
     </style>
 </head>
 
@@ -685,6 +683,41 @@
                         </div>
                     </li>
                     <li id="ladies" class="nav-item text-navbar"><a class="nav-link text" href="#">Ladies</a>
+                        <div class="mega-box">
+                            <div class="content">
+                                <div class="row picture">
+                                    <img src="./assets/woman.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <header>Top</header>
+                                    <ul class="mega-link">
+                                        <li><a href="filter.html">Tshirts</a></li>
+                                        <li><a href="filter.html">Sweaters</a></li>
+                                        <li><a href="filter.html">Dresses</a></li>
+                                        <li><a href="filter.html">Shirts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Bottom</header>
+                                    <ul class="mega-link">
+                                        <li><a href="filter.html">Jeans</a></li>
+                                        <li><a href="filter.html">Pants</a></li>
+                                        <li><a href="filter.html">Skirt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Accessories</header>
+                                    <ul class="mega-link">
+                                        <li><a href="filter.html">Bags</a></li>
+                                        <li><a href="filter.html">Sandals</a></li>
+                                        <li><a href="filter.html">Shoes</a></li>
+                                        <li><a href="filter.html">Socks</a></li>
+                                        <li><a href="filter.html">Wallets</a></li>
+                                        <li><a href="filter.html">Hats</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item text-navbar"><a class="nav-link text" href="#">Collab</a></li>
                     <li class="nav-item text-navbar"><a class="nav-link text sale" href="#">Sale</a></li>
